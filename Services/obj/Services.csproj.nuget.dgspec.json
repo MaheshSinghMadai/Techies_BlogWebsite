@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\KillShotzz\\Documents\\Techie\\Services\\Services.csproj": {}
+    "C:\\Users\\KillShotzz\\Source\\Repos\\Techies\\Services\\Services.csproj": {}
   },
   "projects": {
-    "C:\\Users\\KillShotzz\\Documents\\Techie\\Services\\Services.csproj": {
+    "C:\\Users\\KillShotzz\\Source\\Repos\\Techies\\Services\\Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\KillShotzz\\Documents\\Techie\\Services\\Services.csproj",
+        "projectUniqueName": "C:\\Users\\KillShotzz\\Source\\Repos\\Techies\\Services\\Services.csproj",
         "projectName": "Services",
-        "projectPath": "C:\\Users\\KillShotzz\\Documents\\Techie\\Services\\Services.csproj",
+        "projectPath": "C:\\Users\\KillShotzz\\Source\\Repos\\Techies\\Services\\Services.csproj",
         "packagesPath": "C:\\Users\\KillShotzz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\KillShotzz\\Documents\\Techie\\Services\\obj\\",
+        "outputPath": "C:\\Users\\KillShotzz\\Source\\Repos\\Techies\\Services\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\KillShotzz\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -41,6 +41,12 @@
           "targetAlias": "net6.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.5, )"
             },

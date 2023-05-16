@@ -1,4 +1,5 @@
-﻿using Infrastructure.Data;
+﻿using Entities.Models.Common;
+using Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\KillShotzz\\Documents\\Techie\\Entities\\Entities.csproj": {}
+    "C:\\Users\\KillShotzz\\Source\\Repos\\Techies\\Entities\\Entities.csproj": {}
   },
   "projects": {
-    "C:\\Users\\KillShotzz\\Documents\\Techie\\Entities\\Entities.csproj": {
+    "C:\\Users\\KillShotzz\\Source\\Repos\\Techies\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\KillShotzz\\Documents\\Techie\\Entities\\Entities.csproj",
+        "projectUniqueName": "C:\\Users\\KillShotzz\\Source\\Repos\\Techies\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "C:\\Users\\KillShotzz\\Documents\\Techie\\Entities\\Entities.csproj",
+        "projectPath": "C:\\Users\\KillShotzz\\Source\\Repos\\Techies\\Entities\\Entities.csproj",
         "packagesPath": "C:\\Users\\KillShotzz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\KillShotzz\\Documents\\Techie\\Entities\\obj\\",
+        "outputPath": "C:\\Users\\KillShotzz\\Source\\Repos\\Techies\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\KillShotzz\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,18 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[7.0.4, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

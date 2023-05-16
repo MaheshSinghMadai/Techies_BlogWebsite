@@ -427,25 +427,14 @@
       "Entities/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/Entities.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Entities.dll": {}
-        }
-      },
-      "Services/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "7.0.5",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "7.0.4"
         },
         "compile": {
-          "bin/placeholder/Services.dll": {}
+          "bin/placeholder/Entities.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Services.dll": {}
+          "bin/placeholder/Entities.dll": {}
         }
       }
     }
@@ -1095,20 +1084,15 @@
       "type": "project",
       "path": "../Entities/Entities.csproj",
       "msbuildProject": "../Entities/Entities.csproj"
-    },
-    "Services/1.0.0": {
-      "type": "project",
-      "path": "../Services/Services.csproj",
-      "msbuildProject": "../Services/Services.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "Entities >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 7.0.5",
+      "Microsoft.EntityFrameworkCore.Design >= 7.0.5",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.5",
-      "Npgsql.EntityFrameworkCore.PostgreSQL >= 7.0.4",
-      "Services >= 1.0.0"
+      "Npgsql.EntityFrameworkCore.PostgreSQL >= 7.0.4"
     ]
   },
   "packageFolders": {
@@ -1117,11 +1101,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\KillShotzz\\Documents\\Techie\\Infrastructure\\Infrastructure.csproj",
+      "projectUniqueName": "C:\\Users\\KillShotzz\\Source\\Repos\\Techies\\Infrastructure\\Infrastructure.csproj",
       "projectName": "Infrastructure",
-      "projectPath": "C:\\Users\\KillShotzz\\Documents\\Techie\\Infrastructure\\Infrastructure.csproj",
+      "projectPath": "C:\\Users\\KillShotzz\\Source\\Repos\\Techies\\Infrastructure\\Infrastructure.csproj",
       "packagesPath": "C:\\Users\\KillShotzz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\KillShotzz\\Documents\\Techie\\Infrastructure\\obj\\",
+      "outputPath": "C:\\Users\\KillShotzz\\Source\\Repos\\Techies\\Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\KillShotzz\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1138,11 +1122,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\KillShotzz\\Documents\\Techie\\Entities\\Entities.csproj": {
-              "projectPath": "C:\\Users\\KillShotzz\\Documents\\Techie\\Entities\\Entities.csproj"
-            },
-            "C:\\Users\\KillShotzz\\Documents\\Techie\\Services\\Services.csproj": {
-              "projectPath": "C:\\Users\\KillShotzz\\Documents\\Techie\\Services\\Services.csproj"
+            "C:\\Users\\KillShotzz\\Source\\Repos\\Techies\\Entities\\Entities.csproj": {
+              "projectPath": "C:\\Users\\KillShotzz\\Source\\Repos\\Techies\\Entities\\Entities.csproj"
             }
           }
         }
@@ -1158,6 +1139,12 @@
         "targetAlias": "net6.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[7.0.5, )"
+          },
+          "Microsoft.EntityFrameworkCore.Design": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
             "target": "Package",
             "version": "[7.0.5, )"
           },
