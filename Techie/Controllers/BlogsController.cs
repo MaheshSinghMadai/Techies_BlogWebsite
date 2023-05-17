@@ -63,5 +63,36 @@ namespace Techie.Controllers
             return View(bpm);
         }
 
+        [HttpGet]
+        public IActionResult Edit(int id)
+        {
+            var editBlog = new BlogPostViewModel();
+            BlogPost blogDetails = _blogService.GetBlogById(id);
+
+            editBlog.Title = blogDetails.Title;
+            editBlog.Description = blogDetails.Description;
+
+            return View(editBlog);
+
+        }
+
+        [HttpPost]
+        public IActionResult Edit(BlogPostViewModel blog)
+        {
+            BlogPost b = _blogService.GetBlogById(blog.Id);
+            blog.Title = b.Title;
+            blog.Description = b.Description;
+
+            _blogService.UpdateBlog(b);
+
+            return RedirectToAction("Index");
+
+        }
+
+        public IActionResult Delete(int id)
+        {
+            _blogService.RemoveBlog(id);
+            return RedirectToAction(@"Index");
+        }
     }
 }
