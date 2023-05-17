@@ -1101,9 +1101,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\KillShotzz\\Source\\Repos\\Techies\\Infrastructure\\Infrastructure.csproj",
+      "projectUniqueName": "C:\\Users\\KillShotzz\\source\\repos\\Techies\\Infrastructure\\Infrastructure.csproj",
       "projectName": "Infrastructure",
-      "projectPath": "C:\\Users\\KillShotzz\\Source\\Repos\\Techies\\Infrastructure\\Infrastructure.csproj",
+      "projectPath": "C:\\Users\\KillShotzz\\source\\repos\\Techies\\Infrastructure\\Infrastructure.csproj",
       "packagesPath": "C:\\Users\\KillShotzz\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\KillShotzz\\Source\\Repos\\Techies\\Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
@@ -1122,8 +1122,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\KillShotzz\\Source\\Repos\\Techies\\Entities\\Entities.csproj": {
-              "projectPath": "C:\\Users\\KillShotzz\\Source\\Repos\\Techies\\Entities\\Entities.csproj"
+            "C:\\Users\\KillShotzz\\source\\repos\\Techies\\Entities\\Entities.csproj": {
+              "projectPath": "C:\\Users\\KillShotzz\\source\\repos\\Techies\\Entities\\Entities.csproj"
             }
           }
         }

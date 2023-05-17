@@ -9,39 +9,43 @@ using System.Threading.Tasks;
 
 namespace Infrastructure
 {
-    public class Repository<T> : IRepository<T> where T : BaseEntity
+    public class GenericRepository<T> : IGenericRepository<T> where T : BaseEntity
     {
-        private readonly ApplicationDbContext _db;
-        private DbSet<T> entities;
-        public Repository(ApplicationDbContext db)
+        private ApplicationDbContext _db;
+        private readonly DbSet<T> entities;
+        public GenericRepository(ApplicationDbContext  db)
         {
             _db = db;
             entities = _db.Set<T>();
         }
+        public IEnumerable<T> GetAll()
+        {
+            return entities.ToList();
+        }
+
+        public T GetById(int id)
+        {
+            return entities.SingleOrDefault(s => s.Id == id);
+        }
+
         public void Create(T entity)
         {
-            if (entity == null)
+            if(entity == null)
             {
-                throw new ArgumentNullException("entity");
+                throw new ArgumentNullException();
             }
             entities.Add(entity);
-            _db.SaveChanges();
+            _db.SaveChanges();    
         }
 
         public void Delete(T entity)
         {
             if (entity == null)
             {
-                throw new ArgumentNullException("entity");
+                throw new ArgumentNullException();
             }
-
             entities.Remove(entity);
             _db.SaveChanges();
-        }
-
-        public IEnumerable<T> GetAll()
-        {
-            return entities.ToList();
         }
 
         public void SaveChanges()
@@ -53,7 +57,7 @@ namespace Infrastructure
         {
             if (entity == null)
             {
-                throw new ArgumentNullException("entity");
+                throw new ArgumentNullException();
             }
 
             _db.SaveChanges();

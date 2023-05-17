@@ -444,6 +444,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "Entities": "1.0.0",
+          "Infrastructure": "1.0.0",
           "Microsoft.EntityFrameworkCore": "7.0.5",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "7.0.4"
         },
@@ -1104,11 +1106,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\KillShotzz\\Source\\Repos\\Techies\\Techie\\Techie.csproj",
+      "projectUniqueName": "C:\\Users\\KillShotzz\\source\\repos\\Techies\\Techie\\Techie.csproj",
       "projectName": "Techie",
-      "projectPath": "C:\\Users\\KillShotzz\\Source\\Repos\\Techies\\Techie\\Techie.csproj",
+      "projectPath": "C:\\Users\\KillShotzz\\source\\repos\\Techies\\Techie\\Techie.csproj",
       "packagesPath": "C:\\Users\\KillShotzz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\KillShotzz\\Source\\Repos\\Techies\\Techie\\obj\\",
+      "outputPath": "C:\\Users\\KillShotzz\\source\\repos\\Techies\\Techie\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\KillShotzz\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1125,14 +1127,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\KillShotzz\\Source\\Repos\\Techies\\Entities\\Entities.csproj": {
-              "projectPath": "C:\\Users\\KillShotzz\\Source\\Repos\\Techies\\Entities\\Entities.csproj"
+            "C:\\Users\\KillShotzz\\source\\repos\\Techies\\Entities\\Entities.csproj": {
+              "projectPath": "C:\\Users\\KillShotzz\\source\\repos\\Techies\\Entities\\Entities.csproj"
             },
-            "C:\\Users\\KillShotzz\\Source\\Repos\\Techies\\Infrastructure\\Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\KillShotzz\\Source\\Repos\\Techies\\Infrastructure\\Infrastructure.csproj"
+            "C:\\Users\\KillShotzz\\source\\repos\\Techies\\Infrastructure\\Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\KillShotzz\\source\\repos\\Techies\\Infrastructure\\Infrastructure.csproj"
             },
-            "C:\\Users\\KillShotzz\\Source\\Repos\\Techies\\Services\\Services.csproj": {
-              "projectPath": "C:\\Users\\KillShotzz\\Source\\Repos\\Techies\\Services\\Services.csproj"
+            "C:\\Users\\KillShotzz\\source\\repos\\Techies\\Services\\Services.csproj": {
+              "projectPath": "C:\\Users\\KillShotzz\\source\\repos\\Techies\\Services\\Services.csproj"
             }
           }
         }

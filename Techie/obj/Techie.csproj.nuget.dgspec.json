@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\KillShotzz\\Source\\Repos\\Techies\\Techie\\Techie.csproj": {}
+    "C:\\Users\\KillShotzz\\source\\repos\\Techies\\Techie\\Techie.csproj": {}
   },
   "projects": {
-    "C:\\Users\\KillShotzz\\Source\\Repos\\Techies\\Entities\\Entities.csproj": {
+    "C:\\Users\\KillShotzz\\source\\repos\\Techies\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\KillShotzz\\Source\\Repos\\Techies\\Entities\\Entities.csproj",
+        "projectUniqueName": "C:\\Users\\KillShotzz\\source\\repos\\Techies\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "C:\\Users\\KillShotzz\\Source\\Repos\\Techies\\Entities\\Entities.csproj",
+        "projectPath": "C:\\Users\\KillShotzz\\source\\repos\\Techies\\Entities\\Entities.csproj",
         "packagesPath": "C:\\Users\\KillShotzz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\KillShotzz\\Source\\Repos\\Techies\\Entities\\obj\\",
+        "outputPath": "C:\\Users\\KillShotzz\\source\\repos\\Techies\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\KillShotzz\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -71,14 +71,14 @@
         }
       }
     },
-    "C:\\Users\\KillShotzz\\Source\\Repos\\Techies\\Infrastructure\\Infrastructure.csproj": {
+    "C:\\Users\\KillShotzz\\source\\repos\\Techies\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\KillShotzz\\Source\\Repos\\Techies\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\KillShotzz\\source\\repos\\Techies\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "C:\\Users\\KillShotzz\\Source\\Repos\\Techies\\Infrastructure\\Infrastructure.csproj",
+        "projectPath": "C:\\Users\\KillShotzz\\source\\repos\\Techies\\Infrastructure\\Infrastructure.csproj",
         "packagesPath": "C:\\Users\\KillShotzz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\KillShotzz\\Source\\Repos\\Techies\\Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\KillShotzz\\source\\repos\\Techies\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\KillShotzz\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -95,8 +95,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\KillShotzz\\Source\\Repos\\Techies\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\KillShotzz\\Source\\Repos\\Techies\\Entities\\Entities.csproj"
+              "C:\\Users\\KillShotzz\\source\\repos\\Techies\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\KillShotzz\\source\\repos\\Techies\\Entities\\Entities.csproj"
               }
             }
           }
@@ -152,14 +152,14 @@
         }
       }
     },
-    "C:\\Users\\KillShotzz\\Source\\Repos\\Techies\\Services\\Services.csproj": {
+    "C:\\Users\\KillShotzz\\source\\repos\\Techies\\Services\\Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\KillShotzz\\Source\\Repos\\Techies\\Services\\Services.csproj",
+        "projectUniqueName": "C:\\Users\\KillShotzz\\source\\repos\\Techies\\Services\\Services.csproj",
         "projectName": "Services",
-        "projectPath": "C:\\Users\\KillShotzz\\Source\\Repos\\Techies\\Services\\Services.csproj",
+        "projectPath": "C:\\Users\\KillShotzz\\source\\repos\\Techies\\Services\\Services.csproj",
         "packagesPath": "C:\\Users\\KillShotzz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\KillShotzz\\Source\\Repos\\Techies\\Services\\obj\\",
+        "outputPath": "C:\\Users\\KillShotzz\\source\\repos\\Techies\\Services\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\KillShotzz\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -175,7 +175,14 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\KillShotzz\\source\\repos\\Techies\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\KillShotzz\\source\\repos\\Techies\\Entities\\Entities.csproj"
+              },
+              "C:\\Users\\KillShotzz\\source\\repos\\Techies\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\KillShotzz\\source\\repos\\Techies\\Infrastructure\\Infrastructure.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -223,14 +230,14 @@
         }
       }
     },
-    "C:\\Users\\KillShotzz\\Source\\Repos\\Techies\\Techie\\Techie.csproj": {
+    "C:\\Users\\KillShotzz\\source\\repos\\Techies\\Techie\\Techie.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\KillShotzz\\Source\\Repos\\Techies\\Techie\\Techie.csproj",
+        "projectUniqueName": "C:\\Users\\KillShotzz\\source\\repos\\Techies\\Techie\\Techie.csproj",
         "projectName": "Techie",
-        "projectPath": "C:\\Users\\KillShotzz\\Source\\Repos\\Techies\\Techie\\Techie.csproj",
+        "projectPath": "C:\\Users\\KillShotzz\\source\\repos\\Techies\\Techie\\Techie.csproj",
         "packagesPath": "C:\\Users\\KillShotzz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\KillShotzz\\Source\\Repos\\Techies\\Techie\\obj\\",
+        "outputPath": "C:\\Users\\KillShotzz\\source\\repos\\Techies\\Techie\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\KillShotzz\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -247,14 +254,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\KillShotzz\\Source\\Repos\\Techies\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\KillShotzz\\Source\\Repos\\Techies\\Entities\\Entities.csproj"
+              "C:\\Users\\KillShotzz\\source\\repos\\Techies\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\KillShotzz\\source\\repos\\Techies\\Entities\\Entities.csproj"
               },
-              "C:\\Users\\KillShotzz\\Source\\Repos\\Techies\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\KillShotzz\\Source\\Repos\\Techies\\Infrastructure\\Infrastructure.csproj"
+              "C:\\Users\\KillShotzz\\source\\repos\\Techies\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\KillShotzz\\source\\repos\\Techies\\Infrastructure\\Infrastructure.csproj"
               },
-              "C:\\Users\\KillShotzz\\Source\\Repos\\Techies\\Services\\Services.csproj": {
-                "projectPath": "C:\\Users\\KillShotzz\\Source\\Repos\\Techies\\Services\\Services.csproj"
+              "C:\\Users\\KillShotzz\\source\\repos\\Techies\\Services\\Services.csproj": {
+                "projectPath": "C:\\Users\\KillShotzz\\source\\repos\\Techies\\Services\\Services.csproj"
               }
             }
           }

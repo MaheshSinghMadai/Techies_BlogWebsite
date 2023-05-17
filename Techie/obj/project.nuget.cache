@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eSGRI3a7v8aqKIluydKeDM5DLxO/NberNTIUpysoj5TsvNDoejMGb1C48mN01vmPoa1JBGFTgx7rO0tQ6FW3Fg==",
+  "dgSpecHash": "XKoYBazkWy/zknI3xbM0EE8674YfzJ9PGFz9bovtgT+IiQB/QedmgadBC9PFKHNE/L3oIpCsYxp7d8L/9CS0kQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\KillShotzz\\Source\\Repos\\Techies\\Techie\\Techie.csproj",
+  "projectFilePath": "C:\\Users\\KillShotzz\\source\\repos\\Techies\\Techie\\Techie.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\KillShotzz\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\KillShotzz\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.5\\microsoft.entityframeworkcore.7.0.5.nupkg.sha512",

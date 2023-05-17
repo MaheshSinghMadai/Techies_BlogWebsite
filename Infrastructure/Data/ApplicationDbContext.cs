@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Entities.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -15,6 +16,7 @@ namespace Infrastructure.Data
         {
 
         }
+        public DbSet<BlogPost> Blogposts { get; set; }
 
     }
 }
