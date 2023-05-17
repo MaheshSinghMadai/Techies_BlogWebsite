@@ -1,0 +1,54 @@
+﻿@model IEnumerable<Techie.Models.BlogPostViewModel>
+
+    <p>
+        <a class="btn btn-outline-success" asp-action="Create" asp-controller="BlogPost">Add New Blog</a>
+    </p>
+    <div class="container table-responsive">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        Title
+                    </th>
+                    <th>
+                       Published Date
+                    </th>
+                    <th>
+                        Author
+                    </th>                 
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Id)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Title)
+                    </td>
+                     <td>
+                        @Html.DisplayFor(modelItem => item.PublishDate)
+                    </td>
+                     <td>
+                        
+                    </td>
+                                   
+                    <td>
+                        <a asp-controller="Blogs" asp-action="Edit" asp-route-id="@item.Id"
+                           style="background-color:white;color:#303133;border:none ;border-radius:8px"
+                           >Edit</a> |
+                        <a asp-controller="Blogs" asp-action="Details" asp-route-id="@item.Id"
+                            style="background-color:white;color:#303133;border:none;border-radius:8px;"
+                           >Details</a> |
+                        <a asp-controller="Blogs" asp-action="Delete" asp-route-id="@item.Id"
+                            style="background-color:white;color:#303133;border:none ;border-radius:8px;"
+                           >Delete</a>
+                    </td>
+                </tr>
+                }
+                
+            </tbody>
+        </table>
+    </div>

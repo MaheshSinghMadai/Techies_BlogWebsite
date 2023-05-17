@@ -287,6 +287,8 @@
       },
       "Services/1.0.0": {
         "dependencies": {
+          "Entities": "1.0.0",
+          "Infrastructure": "1.0.0",
           "Microsoft.EntityFrameworkCore": "7.0.5",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "7.0.4"
         },

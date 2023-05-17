@@ -12,3 +12,8 @@ C:\Users\KillShotzz\Source\Repos\Techies\Services\obj\Debug\net6.0\Services.pdb
 C:\Users\KillShotzz\Source\Repos\Techies\Services\obj\Debug\net6.0\ref\Services.dll
 C:\Users\KillShotzz\Source\Repos\Techies\Services\bin\Debug\net6.0\Services.runtimeconfig.json
 C:\Users\KillShotzz\Source\Repos\Techies\Services\obj\Debug\net6.0\Services.genruntimeconfig.cache
+C:\Users\KillShotzz\source\repos\Techies\Services\bin\Debug\net6.0\Entities.dll
+C:\Users\KillShotzz\source\repos\Techies\Services\bin\Debug\net6.0\Infrastructure.dll
+C:\Users\KillShotzz\source\repos\Techies\Services\bin\Debug\net6.0\Entities.pdb
+C:\Users\KillShotzz\source\repos\Techies\Services\bin\Debug\net6.0\Infrastructure.pdb
+C:\Users\KillShotzz\source\repos\Techies\Services\obj\Debug\net6.0\Services.csproj.CopyComplete
