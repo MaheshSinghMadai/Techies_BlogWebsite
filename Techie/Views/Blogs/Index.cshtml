@@ -3,52 +3,18 @@
     <p>
         <a class="btn btn-outline-success" asp-action="Create" asp-controller="BlogPost">Add New Blog</a>
     </p>
-    <div class="container table-responsive">
-        <table class="table">
-            <thead>
-                <tr>
-                    <th>
-                        Title
-                    </th>
-                    <th>
-                       Published Date
-                    </th>
-                    <th>
-                        Author
-                    </th>                 
-                </tr>
-            </thead>
-            <tbody>
-                @foreach (var item in Model)
-                {
-                <tr>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Id)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Title)
-                    </td>
-                     <td>
-                        @Html.DisplayFor(modelItem => item.PublishDate)
-                    </td>
-                     <td>
-                        
-                    </td>
-                                   
-                    <td>
-                        <a asp-controller="Blogs" asp-action="Edit" asp-route-id="@item.Id"
-                           style="background-color:white;color:#303133;border:none ;border-radius:8px"
-                           >Edit</a> |
-                        <a asp-controller="Blogs" asp-action="Details" asp-route-id="@item.Id"
-                            style="background-color:white;color:#303133;border:none;border-radius:8px;"
-                           >View</a> |
-                        <a asp-controller="Blogs" asp-action="Delete" asp-route-id="@item.Id"
-                            style="background-color:white;color:#303133;border:none ;border-radius:8px;"
-                           >Delete</a>
-                    </td>
-                </tr>
-                }
-                
-            </tbody>
-        </table>
-    </div>
+    @foreach(var item in Model)
+    {
+    <div class="list-group">
+        <a asp-action="BlogView" asp-controller="Home" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+            <img src="https://github.com/twbs.png" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0">
+            <div class="d-flex gap-2 w-100 justify-content-between">
+                <div>
+                    <h6 class="mb-0">@Html.DisplayFor(modelItem => item.Title)</h6>
+                    <p class="mb-0 opacity-75">@Html.DisplayFor(modelItem => item.Description)</p>
+                </div>
+                <small class="opacity-50 text-nowrap">now</small>
+            </div>
+        </a>
+</div>
+}

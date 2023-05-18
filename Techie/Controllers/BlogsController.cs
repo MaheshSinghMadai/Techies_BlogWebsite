@@ -25,7 +25,7 @@ namespace Techie.Controllers
                 entity.Id = items.Id;
                 entity.Title = items.Title;
                 entity.PublishDate = items.PublishDate;
-                entity.Description = items.Description;
+                entity.Description = items.Description.Substring(0, Math.Min(items.Description.Length, 100));
                 blogToView.Add(entity);
 
             }
@@ -73,7 +73,6 @@ namespace Techie.Controllers
             editBlog.Description = blogDetails.Description;
 
             return View(editBlog);
-
         }
 
         [HttpPost]
