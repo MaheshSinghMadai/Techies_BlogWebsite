@@ -6,6 +6,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
 
 namespace Entities.Models
 {
@@ -13,9 +14,12 @@ namespace Entities.Models
     {
         public string Title { get; set; }
         public DateTime PublishDate { get; set; }
-        public string Description { get; set; }   
-        public string AuthorId { get; set; }
+        public string Content { get; set; }   
         public string AuthorName { get; set; }
+
+        //[Required]
+        //public string ApplicationUserId { get; set; }
+        //public ApplicationUser ApplicationUser { get; set; }
 
     }
 }
