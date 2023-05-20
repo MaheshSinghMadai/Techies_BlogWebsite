@@ -1,8 +1,8 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\KillShotzz\\source\\repos\\Techies\\IdentityTest\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\IdentityTest.bundle.scp.css",
-      "PackagePath": "staticwebassets\\IdentityTest.bundle.scp.css"
+      "Id": "C:\\Users\\KillShotzz\\source\\repos\\Techies\\IdentityTest\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Techie.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Techie.bundle.scp.css"
     },
     {
       "Id": "C:\\Users\\KillShotzz\\source\\repos\\Techies\\IdentityTest\\wwwroot\\css\\site.css",
@@ -245,20 +245,20 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.IdentityTest.Microsoft.AspNetCore.StaticWebAssets.props",
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.Techie.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
     {
-      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.IdentityTest.props",
-      "PackagePath": "build\\IdentityTest.props"
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.Techie.props",
+      "PackagePath": "build\\Techie.props"
     },
     {
-      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.IdentityTest.props",
-      "PackagePath": "buildMultiTargeting\\IdentityTest.props"
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.Techie.props",
+      "PackagePath": "buildMultiTargeting\\Techie.props"
     },
     {
-      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.IdentityTest.props",
-      "PackagePath": "buildTransitive\\IdentityTest.props"
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.Techie.props",
+      "PackagePath": "buildTransitive\\Techie.props"
     }
   ],
   "ElementsToRemove": []
