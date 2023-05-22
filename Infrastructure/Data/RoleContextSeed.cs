@@ -14,18 +14,20 @@ namespace Infrastructure.Data
         public static async Task SeedRolesAsync(UserManager<ApplicationUser> userManager, RoleManager<IdentityRole> roleManager)
         {
             //Seed Roles
+            await roleManager.CreateAsync(new IdentityRole(Roles.SuperAdmin.ToString()));
             await roleManager.CreateAsync(new IdentityRole(Roles.Admin.ToString()));
             await roleManager.CreateAsync(new IdentityRole(Roles.Author.ToString()));
+
         }
         public static async Task SeedSuperAdminAsync(UserManager<ApplicationUser> userManager, RoleManager<IdentityRole> roleManager)
         {
             //Seed Default User
             var defaultUser = new ApplicationUser
             {
-                UserName = "admin",
-                Email = "dmin@gmail.com",
-                FirstName = "Mahesh",
-                LastName = "Madai",
+                UserName = "superadmin",
+                Email = "superadmin@gmail.com",
+                FirstName = "admin",
+                LastName = "admin",
                 EmailConfirmed = true,
                 PhoneNumberConfirmed = true
             };
@@ -37,9 +39,11 @@ namespace Infrastructure.Data
                     await userManager.CreateAsync(defaultUser, "Zsoxfsq977#@");
                     await userManager.AddToRoleAsync(defaultUser, Roles.Author.ToString());
                     await userManager.AddToRoleAsync(defaultUser, Roles.Admin.ToString());
+                    await userManager.AddToRoleAsync(defaultUser, Roles.SuperAdmin.ToString());
                 }
 
             }
         }
+
     }
 }

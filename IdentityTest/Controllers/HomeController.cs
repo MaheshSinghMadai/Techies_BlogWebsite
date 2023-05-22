@@ -27,7 +27,6 @@ namespace Techie.Controllers
                 entity.PublishDate = items.PublishDate;
                 entity.Content = items.Content.Substring(0, Math.Min(items.Content.Length, 50));
                 blogToView.Add(entity);
-
             }
             return View(blogToView);
         }
@@ -41,11 +40,6 @@ namespace Techie.Controllers
             viewBlog.Content = blogDetail.Content.Substring(0, Math.Min(blogDetail.Content.Length, 100));
 
             return View(viewBlog);
-        }
-
-        public IActionResult Privacy()
-        {
-            return View();
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

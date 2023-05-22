@@ -14,12 +14,17 @@ namespace Entities.Models
     {
         public string Title { get; set; }
         public DateTime PublishDate { get; set; }
-        public string Content { get; set; }   
-        public string AuthorName { get; set; }
+        public string Category { get; set; }
 
-        //[Required]
-        //public string ApplicationUserId { get; set; }
-        //public ApplicationUser ApplicationUser { get; set; }
+        public string Content { get; set; }
+
+        [NotMapped]
+        [DisplayName("Upload Thumbnail")]
+        public byte[] ProductImage { get; set; }
+
+        [ForeignKey("UserId")]
+        public string UserId { get; set; }
+        public ApplicationUser ApplicationUser { get; set; }
 
     }
 }

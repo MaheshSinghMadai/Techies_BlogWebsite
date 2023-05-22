@@ -12,6 +12,9 @@ namespace Techie.Models
         [DisplayName("Published Date")]
         public DateTime PublishDate { get; set; }
         public string Content { get; set; }
+        public string Category { get; set; }
+        public string AuthorId { get; set; }
+        public string AuthorName { get; set; }
 
     }
 }

@@ -1,7 +1,10 @@
 ﻿using Entities.Models;
+using Microsoft.AspNet.Identity;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Services;
 using Techie.Models;
+using System.Security.Principal;
 
 namespace Techie.Controllers
 {
@@ -27,7 +30,6 @@ namespace Techie.Controllers
                 entity.PublishDate = items.PublishDate;
                 entity.Content = items.Content.Substring(0, Math.Min(items.Content.Length, 100));
                 blogToView.Add(entity);
-
             }
             return View(blogToView);
         }
@@ -35,31 +37,34 @@ namespace Techie.Controllers
         [HttpGet]
         public IActionResult Create()
         {
-
             return View();
         }
 
         //POST-Create 
         [HttpPost]
         [AutoValidateAntiforgeryToken]
-        [HttpPost]
+        [Authorize(Roles = "Author")]
         public IActionResult Create(BlogPostViewModel bpm)
         {
-            BlogPost bp = new BlogPost()
+            if (User.Identity.IsAuthenticated)
             {
-                Title = bpm.Title,
-                PublishDate = DateTime.Now,
-                Content = bpm.Content,
-            };
+                bpm.AuthorId = User.Identity.GetUserId();
+                bpm.AuthorName = User.Identity.GetUserName();
+                BlogPost bp = new BlogPost()
+                {
+                    Title = bpm.Title,
+                    PublishDate = DateTime.Now,
+                    Content = bpm.Content,
+                };
 
-            //passing BlogPost object into the CreateBlog() function
-            _blogService.CreateBlog(bp);
+                //passing BlogPost object into the CreateBlog() function
+                _blogService.CreateBlog(bp);
 
-            if (bp.Id > 0)
-            {
-                return RedirectToAction("Index");
+                if (bp.Id > 0)
+                {
+                    return RedirectToAction("Index");
+                }
             }
-
             return View(bpm);
         }
 
@@ -75,6 +80,7 @@ namespace Techie.Controllers
             return View(editBlog);
         }
 
+        [Authorize(Roles = "Author")]
         [HttpPost]
         public IActionResult Edit(BlogPostViewModel blog)
         {
@@ -88,6 +94,7 @@ namespace Techie.Controllers
 
         }
 
+        [Authorize(Roles="Admin")]
         public IActionResult Delete(int id)
         {
             _blogService.RemoveBlog(id);
